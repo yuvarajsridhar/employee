@@ -192,7 +192,7 @@ public ModelAndView gmailLogin(@RequestParam("id_token") String idToken)
 	 GoogleIdToken.Payload payLoad = IdTokenVerifierAndParser.getPayload(idToken);
 	 String name = (String) payLoad.get("name");
 	 String email=payLoad.getEmail();
-System.out.println(payLoad.get("profile"))      ;
+//System.out.println(payLoad.get("profile"))      ;
 	 ModelAndView mv=new ModelAndView();
 	 mv.setViewName("index.jsp");
 	 mv.addObject("result",email);
