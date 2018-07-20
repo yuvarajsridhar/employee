@@ -22,7 +22,7 @@ public class SendMail {
      Session session = Session.getDefaultInstance(properties,    
              new javax.mail.Authenticator() {    
              protected PasswordAuthentication getPasswordAuthentication() {    
-             return new PasswordAuthentication("syuvraj8@gmail.com","pavithrayuvaraj");  
+             return new PasswordAuthentication("syuvraj8@gmail.com","");  
              }    
             });      try {    
                 MimeMessage message = new MimeMessage(session);    
